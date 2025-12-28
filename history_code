@@ -1,0 +1,39 @@
+ 1  clear
+    2  sudo apt update
+    3  sudo apt upgrade -y
+    4  sudo apt install nginx -y
+    5  systemctl start nginx
+    6  systemctl status nginx
+    7  curl http://13.61.188.109
+    8  cd /home/ubuntu
+    9  clear
+   10  sudo apt install git -y
+   11  git clone https://github.com/zulqarnainahmed07/TSK-000-36-Internee-Clone.git
+   12  ll
+   13  sudo rm -rf /var/www/html/*
+   14  sudo cp -r TSK-000-36-Internee-Clone/* /var/www/html/
+   15  sudo chown -R www-data:www-data /var/www/html
+   16  sudo chmod -R 755 /var/www/html
+   17  sudo systemctl restart nginx
+   18  clear
+   19  sudo systemctl restart nginx
+   20  sudo apt update
+   21  sudo apt install certbot python3-certbot-nginx -y
+   22  sudo certbot --nginx -d ali-shehzad-internee.duckdns.org
+   23  sudo tail -f /var/log/nginx/access.log
+   24  sudo tail -f /var/log/nginx/error.log
+   25  ll
+   26  clear
+   27  git init
+   28  vim ali.txt
+   29  git add ali.txt
+   30  git commit -m "first commit"
+   31  git config --global user.name "alishehzad943"
+   32  git config --global user.email "princealishehzad943@gmail.com"
+   33  git branch -M main,
+   34  git remote add origin https://github.com/alishehzad-943/internee.pk.git
+   35  git push -u origin main
+   36  git branch -m main       # rename current branch to main
+   37  git push -u origin main  # push to remote
+   38  clear
+   39  history
